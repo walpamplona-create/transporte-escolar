@@ -1107,7 +1107,7 @@ var _lastGeoCall=0;
 var GEO_MIN_INTERVAL=1100; // ms entre chamadas ao Nominatim (respeita a política de uso)
 var GEO_TIMEOUT=9000; // ms
 var GEO_PROXY_BASE='/proxy';
-var _proxyAvailable=true; // se a função não existir/falhar, cai para chamada direta pelo resto da sessão
+var _proxyAvailable=false; // se a função não existir/falhar, cai para chamada direta pelo resto da sessão
 
 function fetchWithTimeout(url, opts, timeoutMs){
   return new Promise(function(resolve,reject){
